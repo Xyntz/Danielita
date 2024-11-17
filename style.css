@@ -28,7 +28,7 @@ body {
     background-color: #fff8e1;
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    padding: 50px;
+    padding: 20px;
     box-sizing: border-box;
     transition: transform 0.6s ease, opacity 0.6s ease;
     opacity: 0;
@@ -101,4 +101,66 @@ p {
 
 #next {
     right: -70px;
+}
+
+/* ---- Diseño responsivo ---- */
+
+/* Para pantallas más pequeñas (celulares) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Hacemos el contenedor más pequeño */
+        height: 85%; /* Ajustamos la altura */
+    }
+
+    .page {
+        padding: 15px; /* Reducimos el espacio interno */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Tamaño de letra más pequeño */
+    }
+
+    p {
+        font-size: 1rem; /* Texto más pequeño */
+        line-height: 1.5;
+    }
+
+    .nav-button {
+        width: 40px; /* Botones más pequeños */
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    #prev {
+        left: -50px; /* Ajustamos la posición de los botones */
+    }
+
+    #next {
+        right: -50px;
+    }
+}
+
+/* Para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem; /* Reducimos más el título */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reducimos más el texto */
+    }
+
+    .nav-button {
+        width: 35px; /* Botones aún más pequeños */
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    #prev {
+        left: -40px; /* Ajustamos más los botones */
+    }
+
+    #next {
+        right: -40px;
+    }
 }
